@@ -1,0 +1,14 @@
+/.idea
+/.vscode
+/*.iml
+/.build-cache
+/.npm-cache
+/.jest-cache
+/.coverage
+/node_modules
+/build
+/src/**/*.scss.d.ts
+.env
+.env.local
+prettier.json
+/logs
