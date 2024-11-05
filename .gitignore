@@ -12,3 +12,4 @@
 .env.local
 prettier.json
 /logs
+/dist

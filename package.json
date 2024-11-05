@@ -1,8 +1,14 @@
 {
-  "name": "adapter-sentry",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "adapter-mattermost-sentry",
+  "version": "1.1.0",
+  "description": "A TypeScript adapter that integrates Sentry with Mattermost, converting Sentry events to a format compatible with Mattermost webhooks.",
+  "author": "Nikita Tolmachev toniktoo@gmail.com",
+  "license": "MIT",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "npx tsc && pm2 start dist/app.js",
+    "dev": "nodemon src/app.ts"
+  },
   "dependencies": {
     "axios": "^1.5.0",
     "body-parser": "^1.20.2",
@@ -11,10 +17,26 @@
     "nodemon": "^3.0.1",
     "winston": "^3.10.0"
   },
-  "scripts": {
-    "start": "pm2 start src/app.js",
-    "dev": "nodemon src/app.js"
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   },
-  "author": "",
-  "license": "ISC"
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/toniktoo/Sentry-Mattermost-Adapter.git"
+  },
+  "keywords": [
+    "sentry",
+    "mattermost",
+    "typescript",
+    "webhook",
+    "integration",
+    "adapter"
+  ],
+    "bugs": {
+    "url": "https://github.com/toniktoo/Sentry-Mattermost-Adapter/issues"
+  },
+  "homepage": "https://github.com/toniktoo/Sentry-Mattermost-Adapter#readme"
 }

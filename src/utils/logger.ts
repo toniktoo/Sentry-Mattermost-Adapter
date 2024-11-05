@@ -1,5 +1,6 @@
-const { format, createLogger, transports } = require("winston");
+import { format, createLogger, transports } from "winston";
 const { combine, timestamp, label, prettyPrint } = format;
+
 const CATEGORY = "Adapter Sentry-Mattermost";
 
 const logger = createLogger({
@@ -23,4 +24,4 @@ const logger = createLogger({
   ],
 });
 
-module.exports = logger;
+export default logger;
